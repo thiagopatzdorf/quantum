@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Estado de Bell no ibm_marrakesh</title>
+  <desc id="d">Histograma de 1024 medições: 00 apareceu 520 vezes, 11 apareceu 489, 01 apareceu 8 e 10 apareceu 7.</desc>
+  <style>
+    :root { --fundo:#ffffff; --texto:#1f2328; --suave:#656d76; --linha:#d0d7de; --certo:#6929c4; --ruido:#da1e28; }
+    @media (prefers-color-scheme: dark) {
+      :root { --fundo:#0d1117; --texto:#e6edf3; --suave:#8b949e; --linha:#30363d; --certo:#be95ff; --ruido:#ff8389; }
+    }
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: var(--texto); }
+    .suave { fill: var(--suave); }
+  </style>
+  <rect width="600" height="340" rx="12" fill="var(--fundo)"/>
+  <text x="300" y="30" text-anchor="middle" font-size="16" font-weight="600">Estado de Bell em hardware real · ibm_marrakesh · 1024 medições</text>
+
+  <line x1="40" y1="240" x2="560" y2="240" stroke="var(--linha)" stroke-width="2"/>
+
+  <rect x="70"  y="40"    width="90" height="200"   rx="4" fill="var(--certo)"/>
+  <rect x="190" y="236.9" width="90" height="3.1"   rx="1" fill="var(--ruido)"/>
+  <rect x="310" y="237.3" width="90" height="2.7"   rx="1" fill="var(--ruido)"/>
+  <rect x="430" y="51.9"  width="90" height="188.1" rx="4" fill="var(--certo)"/>
+
+  <g font-size="15" font-weight="600" text-anchor="middle">
+    <text x="115" y="58" fill="#fff" style="fill:#fff">520</text>
+    <text x="235" y="228">8</text>
+    <text x="355" y="228">7</text>
+    <text x="475" y="70" style="fill:#fff">489</text>
+  </g>
+
+  <g font-size="18" font-weight="600" text-anchor="middle">
+    <text x="115" y="266">00</text>
+    <text x="235" y="266">01</text>
+    <text x="355" y="266">10</text>
+    <text x="475" y="266">11</text>
+  </g>
+
+  <g font-size="13" text-anchor="middle" class="suave">
+    <text x="115" y="286" class="suave">esperado</text>
+    <text x="235" y="286" class="suave">ruído</text>
+    <text x="355" y="286" class="suave">ruído</text>
+    <text x="475" y="286" class="suave">esperado</text>
+  </g>
+
+  <text x="300" y="322" text-anchor="middle" font-size="14" class="suave">98,54% das medições caíram em 00 ou 11 · 1,46% foi ruído do chip</text>
+</svg>

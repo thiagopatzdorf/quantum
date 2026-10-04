@@ -1,0 +1,16 @@
+{
+  "quando": "2026-10-04T04:38:21+00:00",
+  "backend": "ibm_marrakesh",
+  "qubits_do_chip": 156,
+  "shots": 1024,
+  "contagens": {
+    "00": 520,
+    "01": 8,
+    "10": 7,
+    "11": 489
+  },
+  "fracao_00_ou_11": 0.9854,
+  "fracao_ruido": 0.0146,
+  "segundos_quanticos_usados": null,
+  "job_id": "db0tf63id5ic73eqaf90"
+}

@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+# a chave da IBM nunca entra aqui; ela vive em variável de ambiente
+# o PNG é gerado a cada execução; o que fica versionado é o JSON e o SVG curado
+**/resultados/*.png

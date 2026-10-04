@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">quantum</title>
+  <desc id="d">Banner do repositório quantum: o circuito do estado de Bell, com uma porta Hadamard, um CNOT e duas medições.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#1d1147"/>
+      <stop offset="1" stop-color="#3b1a78"/>
+    </linearGradient>
+    <radialGradient id="brilho" cx="0.82" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#be95ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#be95ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grade" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+  </defs>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .fio { stroke: #c9b8ff; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+    .caixa { fill: #1d1147; stroke: #be95ff; stroke-width: 2.5; }
+    .ponto { fill: #be95ff; }
+    .ket { fill: #e9defd; font-size: 26px; }
+  </style>
+
+  <rect width="1200" height="320" rx="18" fill="url(#fundo)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grade)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#brilho)"/>
+
+  <text x="64" y="150" font-size="84" font-weight="700" fill="#ffffff" letter-spacing="-2">quantum</text>
+  <text x="68" y="198" font-size="24" fill="#d4c4ff">computação quântica em hardware real</text>
+  <text x="68" y="238" font-size="17" fill="#a994e8" letter-spacing="1">IBM QUANTUM  ·  QISKIT  ·  EXPERIMENTOS COM NÚMERO E JOB ID</text>
+
+  <!-- circuito de Bell -->
+  <text class="ket" x="600" y="116" text-anchor="middle">|0⟩</text>
+  <text class="ket" x="600" y="216" text-anchor="middle">|0⟩</text>
+
+  <path class="fio" d="M632 110 H1130"/>
+  <path class="fio" d="M632 210 H1130"/>
+
+  <!-- Hadamard -->
+  <rect class="caixa" x="690" y="84" width="52" height="52" rx="8"/>
+  <text x="716" y="119" text-anchor="middle" font-size="28" font-weight="700" fill="#ffffff">H</text>
+
+  <!-- CNOT -->
+  <path class="fio" d="M830 110 V210"/>
+  <circle class="ponto" cx="830" cy="110" r="8"/>
+  <circle cx="830" cy="210" r="20" fill="#1d1147" stroke="#be95ff" stroke-width="2.5"/>
+  <path class="fio" d="M830 190 V230 M810 210 H850"/>
+
+  <!-- medições -->
+  <g>
+    <rect class="caixa" x="960" y="84" width="52" height="52" rx="8"/>
+    <path class="fio" d="M971 120 A15 15 0 0 1 1001 120 M986 120 L998 100"/>
+    <rect class="caixa" x="960" y="184" width="52" height="52" rx="8"/>
+    <path class="fio" d="M971 220 A15 15 0 0 1 1001 220 M986 220 L998 200"/>
+  </g>
+
+  <!-- saída clássica -->
+  <text x="1060" y="116" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">0 | 1</text>
+  <text x="1060" y="216" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">0 | 1</text>
+  <text x="900" y="280" font-size="15" fill="#a994e8" text-anchor="middle">sempre iguais: 00 ou 11</text>
+</svg>
