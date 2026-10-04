@@ -1,0 +1,9 @@
+{
+  "_doc": "O que ainda NÃO foi medido. Só sai daqui para experimentos/NN-nome/meta.json quando houver número e job ID.",
+  "planejados": [
+    {"id": "02-ghz", "titulo": "Estado GHZ", "pergunta": "Emaranhar 3 ou mais qubits: o ruído cresce quanto a cada qubit a mais?"},
+    {"id": "03-grover", "titulo": "Grover", "pergunta": "A busca com ganho quadrático ainda aparece em 2 a 3 qubits, ou o ruído come o ganho?"},
+    {"id": "04-mitigacao", "titulo": "Mitigação de erro", "pergunta": "Quanto do erro medido dá para recuperar só com software?"},
+    {"id": "05-dois-chips", "titulo": "Mesmo circuito, dois chips", "pergunta": "O ruído é do circuito ou do chip?"}
+  ]
+}

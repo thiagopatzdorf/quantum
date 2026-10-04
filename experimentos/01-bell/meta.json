@@ -1,0 +1,17 @@
+{
+  "id": "01-bell",
+  "titulo": "Estado de Bell",
+  "resumo": "Dois qubits emaranhados: depois da medição, sempre concordam.",
+  "estado": "medido",
+  "esperados": ["00", "11"],
+  "resultado": "resultados/bell.json",
+  "circuito": "resultados/circuito.txt",
+  "prova": [
+    "O acesso ao hardware real funciona de ponta a ponta: conta, fila, job e resultado.",
+    "Dá para ver emaranhamento e ruído numa medição de verdade."
+  ],
+  "nao_prova": [
+    "Vantagem quântica: um computador comum simula 2 qubits sem esforço.",
+    "A taxa de erro do chip: uma rodada só não mede isso. Seria preciso repetir em horários e chips diferentes."
+  ]
+}
